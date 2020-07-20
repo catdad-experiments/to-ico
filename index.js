@@ -1,9 +1,6 @@
 'use strict';
-const arrify = require('arrify');
 const bufferAlloc = require('buffer-alloc');
-const imageSize = require('image-size');
 const parsePng = require('parse-png');
-const resizeImg = require('resize-img');
 
 const constants = {
 	bitmapSize: 40,
@@ -112,36 +109,4 @@ const generateIco = data => {
 	});
 };
 
-const resizeImages = (data, opts) => {
-	data = data
-		.map(x => {
-			const size = imageSize(x);
-
-			return {
-				data: x,
-				width: size.width,
-				height: size.height
-			};
-		})
-		.reduce((a, b) => a.width > b.width ? a : b, {});
-
-	return Promise.all(opts.sizes.filter(x => x <= data.width).map(x => resizeImg(data.data, {
-		width: x,
-		height: x
-	})));
-};
-
-module.exports = (input, opts) => {
-	const data = arrify(input);
-
-	opts = Object.assign({
-		resize: false,
-		sizes: [16, 24, 32, 48, 64, 128, 256]
-	}, opts);
-
-	if (opts.resize) {
-		return resizeImages(data, opts).then(generateIco);
-	}
-
-	return generateIco(data);
-};
+module.exports = (images) => generateIco(images);
