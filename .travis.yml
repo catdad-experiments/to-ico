@@ -7,7 +7,7 @@ node_js:
   - '8'
 
 jobs:
-	include:
+  include:
     - stage: release
       if: tag IS present
       os: linux
@@ -18,7 +18,7 @@ jobs:
         provider: npm
         email: vatev.1+npm@gmail.com
         api_key:
-					# catdad 6c03......c800
+          # catdad 6c03......c800
           secure: oakQVvXznuhCblmjaN1HJc3aHWATqu6wWhDL6qZBkNVV2Dn5sOKA3wx+so+6hXxMY7IzeKN4SX58oqAXeb0F1cM+OJcds99Euyj3i3f597vg+fjvcBqh7KvPVY6+z9RCsd9DaNwC3KrKCf6XPYdz9ueFYbwHz56EQsLNJISQ+MGng4m36VvqNkrUUz5ihPEfcPS13xFFLk693FBZ60y70Hcnd+CjS57sJD6sXURv1BzzsKOkOP0d2QncdyyPigDbySeGik+HR9abIL/ND1jiQDti6iUkCGBIkm4gHA4QnsqNAPwnXVq52mDzBZtFGeC8IoTQPzgPuGVFdDK+8dj0o13bTCbbpkgV00e7mAVplcNeQxcpHsA/t78T8JABo6D2I7C4UQDccKJ62L/pDFAtDhOb1E0UL2eiH63C3OTUNW4uCjhRT14cUfX9PJhfOSCC3rnsQGwTM+3Oxtx8o75PRZTjYFH6Vv7EIVj05ZlBvdjur0oMx5Bd0CmKk361013SI9NXfLwTnC0upCmXbBZp6Dj5tynB/jOpANYWjwOYnGh7t9v3+xNoxzjrQa3LdymjXqKsmV9ww0vIyZyx3FQC+E2YyhB0/6AbS0/RbBfCer9PyfucXy8hEwquUas8i7n4bN2a3kC6pGjDlyfQVvWeEi+ZFSb9XKstHQ0V5GiEQp8=
         on:
           tags: true
