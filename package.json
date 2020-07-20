@@ -1,7 +1,7 @@
 {
   "name": "@catdad/to-ico",
   "version": "1.1.5",
-  "description": "Convert PNG to ICO in memory",
+  "description": "Convert PNG images to ICO",
   "license": "MIT",
   "repository": "catdad-experiments/to-ico",
   "contributors": [
