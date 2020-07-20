@@ -2,6 +2,8 @@
 
 > Convert PNG images to ICO
 
+This module is a fork of [`kevva/to-ico`](https://github.com/kevva/to-ico), removing the resize code. This code was quite old and had problematic dependecnies, and my use case did not require it.
+
 ## Install
 
 ```bash
@@ -16,7 +18,12 @@ const toIco = require('@catdad/to-ico');
 
 const files = [
   fs.readFileSync('unicorn-16x16.png'),
-  fs.readFileSync('unicorn-32x32.png')
+  fs.readFileSync('unicorn-24x24.png'),
+  fs.readFileSync('unicorn-32x32.png'),
+  fs.readFileSync('unicorn-48x48.png'),
+  fs.readFileSync('unicorn-64x64.png'),
+  fs.readFileSync('unicorn-128x128.png'),
+  fs.readFileSync('unicorn-256x256.png')
 ];
 
 toIco(files).then(buf => {
@@ -38,6 +45,7 @@ The images must have a size of `16x16`, `24x24`, `32x32`, `48x48`, `64x64`, `128
 
 ## Related
 
+* [to-ico](https://github.com/kevva/to-ico) - the original module that this is a fork of
 * [to-ico-cli](https://github.com/kevva/to-ico-cli) - CLI for this module
 
 ## License
