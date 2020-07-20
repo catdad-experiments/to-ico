@@ -1,4 +1,3 @@
-const bufferAlloc = require('buffer-alloc');
 const parsePng = require('parse-png');
 
 const constants = {
@@ -9,7 +8,7 @@ const constants = {
 };
 
 const createHeader = n => {
-	const buf = bufferAlloc(constants.headerSize);
+	const buf = Buffer.alloc(constants.headerSize);
 
 	buf.writeUInt16LE(0, 0);
 	buf.writeUInt16LE(1, 2);
@@ -19,7 +18,7 @@ const createHeader = n => {
 };
 
 const createDirectory = (data, offset) => {
-	const buf = bufferAlloc(constants.directorySize);
+	const buf = Buffer.alloc(constants.directorySize);
 	const size = data.data.length + constants.bitmapSize;
 	const width = data.width === 256 ? 0 : data.width;
 	const height = data.height === 256 ? 0 : data.height;
@@ -38,7 +37,7 @@ const createDirectory = (data, offset) => {
 };
 
 const createBitmap = (data, compression) => {
-	const buf = bufferAlloc(constants.bitmapSize);
+	const buf = Buffer.alloc(constants.bitmapSize);
 
 	buf.writeUInt32LE(constants.bitmapSize, 0);
 	buf.writeInt32LE(data.width, 4);
@@ -59,7 +58,7 @@ const createDib = (data, width, height, bpp) => {
 	const cols = width * bpp;
 	const rows = height * cols;
 	const end = rows - cols;
-	const buf = bufferAlloc(data.length);
+	const buf = Buffer.alloc(data.length);
 
 	for (let row = 0; row < rows; row += cols) {
 		for (let col = 0; col < cols; col += bpp) {
