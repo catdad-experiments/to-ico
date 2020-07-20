@@ -1,6 +1,6 @@
 {
   "name": "@catdad/to-ico",
-  "version": "1.1.5",
+  "version": "1.0.0",
   "description": "Convert PNG images to ICO",
   "license": "MIT",
   "repository": "catdad-experiments/to-ico",
