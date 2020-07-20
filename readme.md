@@ -1,4 +1,4 @@
-# to-ico [![Build Status](https://travis-ci.org/kevva/to-ico.svg?branch=master)](https://travis-ci.org/kevva/to-ico)
+# @catdad/to-ico [![Build Status](https://travis-ci.com/catdad-experiments/to-ico.svg?branch=master)](https://travis-ci.com/catdad-experiments/to-ico)
 
 > Convert PNG to ICO in memory
 
