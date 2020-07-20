@@ -9,7 +9,7 @@
     "Kiril Vatev <vatev.1@gmail.com> (github.com/catdad)"
   ],
   "engines": {
-    "node": ">=4"
+    "node": ">=8.0.0"
   },
   "scripts": {
     "test": "eslint index.js && ava --verbose"
@@ -34,8 +34,5 @@
     "file-type": "^4.3.0",
     "icojs": "^0.7.2",
     "pify": "^2.3.0"
-  },
-	"engines": {
-    "node": ">=8.0.0"
   }
 }
