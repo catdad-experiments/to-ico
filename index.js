@@ -1,4 +1,3 @@
-'use strict';
 const bufferAlloc = require('buffer-alloc');
 const parsePng = require('parse-png');
 
