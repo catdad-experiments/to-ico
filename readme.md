@@ -2,7 +2,7 @@
 
 > Convert PNG images to ICO
 
-This module is a fork of [`kevva/to-ico`](https://github.com/kevva/to-ico), removing the resize code. This code was quite old and had problematic dependecnies, and my use case did not require it.
+This module is a fork of [`kevva/to-ico`](https://github.com/kevva/to-ico), removing the resize code. This code was quite old and had problematic dependencies, and my use case did not require it.
 
 ## Install
 
@@ -50,4 +50,4 @@ The images must have a size of `16x16`, `24x24`, `32x32`, `48x48`, `64x64`, `128
 
 ## License
 
-MIT © [Kevin Martensson](http://github.com/kevva)
+[MIT](license)
