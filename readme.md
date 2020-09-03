@@ -1,4 +1,10 @@
-# @catdad/to-ico [![Build Status](https://travis-ci.com/catdad-experiments/to-ico.svg?branch=master)](https://travis-ci.com/catdad-experiments/to-ico)
+# @catdad/to-ico [![Build Status][travis.svg]][travis.link] [![NPM Downloads][npm-downloads.svg]][npm.link] [![NPM Version][npm-version.svg]][npm.link]
+
+[travis.svg]: https://travis-ci.com/catdad-experiments/to-ico.svg?branch=master
+[travis.link]: https://travis-ci.com/catdad-experiments/to-ico
+[npm-downloads.svg]: https://img.shields.io/npm/dm/@catdad/to-ico.svg
+[npm.link]: https://www.npmjs.com/package/@catdad/to-ico
+[npm-version.svg]: https://img.shields.io/npm/v/@catdad/to-ico.svg
 
 > Convert PNG images to ICO
 
