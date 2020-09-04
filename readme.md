@@ -1,6 +1,6 @@
-# @catdad/to-ico [![Build Status][travis.svg]][travis.link]
+# @catdad/to-ico
 
-[![NPM Downloads][npm-downloads.svg]][npm.link] [![NPM Version][npm-version.svg]][npm.link]
+[![Build Status][travis.svg]][travis.link] [![NPM Downloads][npm-downloads.svg]][npm.link] [![NPM Version][npm-version.svg]][npm.link]
 
 [travis.svg]: https://travis-ci.com/catdad-experiments/to-ico.svg?branch=master
 [travis.link]: https://travis-ci.com/catdad-experiments/to-ico
