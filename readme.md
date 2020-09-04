@@ -1,4 +1,6 @@
-# @catdad/to-ico [![Build Status][travis.svg]][travis.link] [![NPM Downloads][npm-downloads.svg]][npm.link] [![NPM Version][npm-version.svg]][npm.link]
+# @catdad/to-ico [![Build Status][travis.svg]][travis.link]
+
+[![NPM Downloads][npm-downloads.svg]][npm.link] [![NPM Version][npm-version.svg]][npm.link]
 
 [travis.svg]: https://travis-ci.com/catdad-experiments/to-ico.svg?branch=master
 [travis.link]: https://travis-ci.com/catdad-experiments/to-ico
@@ -51,6 +53,7 @@ The images must have a size of `16x16`, `24x24`, `32x32`, `48x48`, `64x64`, `128
 
 ## Related
 
+* [svg-app-icon](https://github.com/catdad/svg-app-icon) - create high-quality desktop app icons for Windows, MacOS, and Linux using an SVG source
 * [to-ico](https://github.com/kevva/to-ico) - the original module that this is a fork of
 * [to-ico-cli](https://github.com/kevva/to-ico-cli) - CLI for this module
 
