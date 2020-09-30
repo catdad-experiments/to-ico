@@ -32,7 +32,7 @@
     "eslint": "^5.16.0",
     "file-type": "^4.3.0"
   },
-	"publishConfig": {
+  "publishConfig": {
     "access": "public"
   }
 }
